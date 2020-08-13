@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">casio</string>
+    //Activity5 realted Strings
+    <string name="activity5title">Quadratic equation calculator</string>string>
+    <string name="x_square_ka_coeffient">coefficient of x^2</string>
+    <string name="x_ka_coeffient">coefficient of x</string>
+    <string name="Quadratic_equation_ka_constant">constant in quadratic equation</string>
+    <string name="Quadratic_equation_ka_pehla_root">Root1 of quadratic equation</string>
+    <string name="Quadratic_equation_ka_doosra_root">Root2 of quadratic equation</string>
+    <string name="Button19">Calculate</string>
+    //Activity4 related Strings
+    <string name="activity4title">Currency Converter</string>
+    <string name="Input_currency">Input currency</string>
+    <string name="Output_currency">Output currency</string>
+    <string name="dollar_to_rupees">$ to Rs.</string>
+    <string name="Rupees_to_dollar">Rs to $</string>
+    //Activity3 related Strings
+    <string name="Activity3title">Unit Converter</string>
+    <string name="textview4">Enter the value</string>
+    <string name="textview8">Result</string>
+    <string name="button8">Miles to KM</string>
+    <string name="button9">KM to Miles</string>
+    <string name="button10">Inch to MM</string>
+    <string name="button11">MM to Inch</string>
+    <string name="button12">Pound to KG</string>
+    <string name="button13">KG to pound</string>
+    <string name="button14">HP to KW</string>
+    <string name="button15">KW to HP</string>
+    //Activity2 related string
+    <string name="Activity2title">Calculator</string>
+    <string name="textview6">Enter 1st number</string>
+    <string name="textview7">Enter 2nd number</string>
+    <string name="textview5">Result</string>
+</resources>
