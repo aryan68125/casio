@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/activity_ii"
     tools:context=".Activity2">
 
     <TextView
@@ -17,6 +18,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/Activity2title"
+        android:textColor="#F1F1F1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,6 +33,8 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="24dp"
         android:hint="Result"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -41,6 +45,7 @@
         android:layout_marginStart="372dp"
         android:layout_marginLeft="372dp"
         android:layout_marginTop="52dp"
+        android:background="@drawable/plus"
         android:onClick="clk1"
         android:text="+"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +58,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
         android:layout_marginTop="36dp"
+        android:background="@drawable/minus"
         android:onClick="clk2"
         android:text="-"
         app:layout_constraintStart_toEndOf="@+id/textView7"
@@ -65,6 +71,7 @@
         android:layout_marginStart="512dp"
         android:layout_marginLeft="512dp"
         android:layout_marginTop="52dp"
+        android:background="@drawable/multiply"
         android:onClick="clk3"
         android:text=" X "
         app:layout_constraintStart_toStartOf="parent"
@@ -74,9 +81,10 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="36dp"
+        android:background="@drawable/divide"
         android:onClick="clk4"
         android:text=" / "
         app:layout_constraintStart_toEndOf="@+id/button3"
@@ -91,6 +99,8 @@
         android:layout_marginTop="44dp"
         android:hint="@string/textview6"
         android:inputType="number"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -103,6 +113,8 @@
         android:layout_marginTop="20dp"
         android:hint="@string/textview7"
         android:inputType="number"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

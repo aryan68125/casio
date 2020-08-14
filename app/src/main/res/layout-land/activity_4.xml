@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/activity_iv_landscape"
     tools:context=".Activity4">
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_marginLeft="96dp"
         android:layout_marginBottom="108dp"
         android:text="@string/activity4title"
+        android:textColor="#F1F1F1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -21,46 +23,60 @@
         android:id="@+id/textView10"
         android:layout_width="266dp"
         android:layout_height="71dp"
-        android:layout_marginStart="348dp"
-        android:layout_marginLeft="348dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="352dp"
+        android:layout_marginLeft="352dp"
+        android:layout_marginTop="24dp"
         android:hint="@string/Input_currency"
         android:inputType="number"
+        android:textColor="#070707"
+        android:textColorHint="#070707"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="261dp"
-        android:layout_height="64dp"
+        android:layout_height="105dp"
         android:layout_marginStart="352dp"
         android:layout_marginLeft="352dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:hint="@string/Output_currency"
+        android:textColor="#AD4B4E"
+        android:textColorHint="#EEEEED"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
         android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="102dp"
+        android:layout_height="51dp"
         android:layout_marginStart="352dp"
         android:layout_marginLeft="352dp"
         android:layout_marginTop="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
         android:onClick="clk1"
         android:text="@string/dollar_to_rupees"
+        android:textColor="#E3E0E0"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <Button
         android:id="@+id/button17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
         android:onClick="clk2"
         android:text="@string/Rupees_to_dollar"
+        android:textColor="#F1F1F1"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/button16"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 

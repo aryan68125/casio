@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F1F1F1"
     tools:context=".activity_5">
 
     <Button
         android:id="@+id/button19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="448dp"
-        android:layout_marginLeft="448dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="464dp"
+        android:layout_marginLeft="464dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/checkmark"
         android:onClick="clk1"
-        android:text="@string/Button19"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/textView12"
