@@ -19,6 +19,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/Activity2title"
         android:textColor="#F1F1F1"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +36,7 @@
         android:hint="Result"
         android:textColor="#F1F1F1"
         android:textColorHint="#F1F1F1"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -98,9 +100,10 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="44dp"
         android:hint="@string/textview6"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
         android:textColor="#F1F1F1"
         android:textColorHint="#F1F1F1"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -112,9 +115,10 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:hint="@string/textview7"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
         android:textColor="#F1F1F1"
         android:textColorHint="#F1F1F1"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/activity_iii_landscape"
+    android:background="@drawable/activiy_iii_landscape"
     tools:context=".Activity3">
 
     <TextView
@@ -16,6 +16,7 @@
         android:layout_marginTop="68dp"
         android:text="@string/Activity3title"
         android:textColor="#F1F1F1"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 

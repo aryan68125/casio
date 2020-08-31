@@ -8,16 +8,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.util.Log;
+import android.widget.TextView;
+
 //here the buttons clicked functions are dealt through java programming language (PROGRAMICAL METHOD) this method should be preferred
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button button;
     View view;
     String Tag = "Main Activity";
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(Tag, "--on create--");
+        textView = findViewById(R.id.textView);
+        textView.setOnClickListener(this);
         Button button6 = findViewById(R.id.button6);
         Button button7 = findViewById(R.id.button7);
         Button button18 = findViewById(R.id.button18);
@@ -26,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button6.setOnClickListener(this);
         button7.setOnClickListener(this);
         button18.setOnClickListener(this);
+
     }
 
     @Override
@@ -84,6 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button18:
                 Intent intent4 = new Intent(this, activity_5.class);
                 startActivity(intent4);
+                break;
+            case R.id.textView:
+                Intent intent6 = new Intent(this,  FragActivity.class);
+                startActivity(intent6);
                 break;
         }
     }

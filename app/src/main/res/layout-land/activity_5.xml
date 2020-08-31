@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F1F1"
+    android:background="@drawable/activity_v_landscape"
     tools:context=".activity_5">
 
     <Button
@@ -27,7 +27,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
         android:hint="@string/x_square_ka_coeffient"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +41,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         android:hint="@string/x_ka_coeffient"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -50,7 +54,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:hint="@string/Quadratic_equation_ka_constant"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -62,6 +68,8 @@
         android:layout_marginLeft="328dp"
         android:layout_marginTop="24dp"
         android:hint="@string/Quadratic_equation_ka_pehla_root"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,6 +81,8 @@
         android:layout_marginLeft="328dp"
         android:layout_marginTop="24dp"
         android:hint="@string/Quadratic_equation_ka_doosra_root"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -84,6 +94,8 @@
         android:layout_marginLeft="52dp"
         android:layout_marginTop="40dp"
         android:text="@string/activity5title"
+        android:textColor="#F1F1F1"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 </androidx.constraintlayout.widget.ConstraintLayout>

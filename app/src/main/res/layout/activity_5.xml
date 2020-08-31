@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F1F1"
+    android:background="@drawable/activity_v_portrait"
     tools:context=".activity_5">
 
     <Button
         android:id="@+id/button19"
         android:layout_width="76dp"
         android:layout_height="73dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginLeft="152dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginLeft="188dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/checkmark"
         android:onClick="clk1"
@@ -27,7 +27,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:hint="@string/x_square_ka_coeffient"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,18 +41,22 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         android:hint="@string/x_ka_coeffient"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <EditText
         android:id="@+id/textView14"
-        android:layout_width="255dp"
-        android:layout_height="78dp"
+        android:layout_width="330dp"
+        android:layout_height="77dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:hint="@string/Quadratic_equation_ka_constant"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
+        android:textColor="#E1E1E1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -62,6 +68,8 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
         android:hint="@string/Quadratic_equation_ka_pehla_root"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -73,17 +81,21 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
         android:hint="@string/Quadratic_equation_ka_doosra_root"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#F1F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="205dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
+        android:layout_width="256dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
         android:layout_marginTop="44dp"
         android:text="@string/activity5title"
+        android:textColor="#F1F1F1"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button19" />
 </androidx.constraintlayout.widget.ConstraintLayout>

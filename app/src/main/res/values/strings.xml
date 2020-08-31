@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">casio</string>
+    <string name="app_name">Abacus</string>
     //Activity5 realted Strings
     <string name="activity5title">Quadratic equation calculator</string>string>
     <string name="x_square_ka_coeffient">coefficient of x^2</string>
@@ -31,4 +31,17 @@
     <string name="textview6">Enter 1st number</string>
     <string name="textview7">Enter 2nd number</string>
     <string name="textview5">Result</string>
+    //developer page
+    <string name="textView18"> Name = Aditya Kumar \n
+
+                               Course = Computer science \n
+
+                               Year = 2nd Year \n
+
+                               ID number = CS4536 \n</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_frag">FragActivity</string>
+    <string name="textView19">Developer Info</string>
 </resources>
