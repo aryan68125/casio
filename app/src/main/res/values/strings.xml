@@ -25,7 +25,7 @@
     <string name="button12">Pound to KG</string>
     <string name="button13">KG to pound</string>
     <string name="button14">HP to KW</string>
-    <string name="button15">KW to HP</string>
+    <string name="button15">Open</string>
     //Activity2 related string
     <string name="Activity2title">Calculator</string>
     <string name="textview6">Enter 1st number</string>
@@ -44,4 +44,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_frag">FragActivity</string>
     <string name="textView19">Developer Info</string>
+    <string name="Activity6_EditText">Enter the Value</string>
+    <string name="Activity6_TextView">Output</string>
+    <string name="Activity6_name">Length Converter</string>
+    <string name="Activity6_button">Convert</string>
 </resources>
