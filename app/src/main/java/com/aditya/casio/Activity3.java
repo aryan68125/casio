@@ -38,20 +38,20 @@ public class Activity3 extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 if(position == 0)
-                {
+                { //Length Converter
                     Intent intent = new Intent(Activity3.this, Activity6.class);
                     startActivity(intent);
                 }
 
                 if(position == 1)
-                {
-                    Intent intent = new Intent(Activity3.this, Activity6.class);
+                { //weight converter
+                    Intent intent = new Intent(Activity3.this, Activity7.class);
                     startActivity(intent);
                 }
 
                 if(position == 2)
                 {
-                    Intent intent = new Intent(Activity3.this, Activity6.class);
+                    Intent intent = new Intent(Activity3.this, Activity8.class);
                     startActivity(intent);
                 }
                 if(position == 3)

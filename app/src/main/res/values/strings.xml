@@ -48,4 +48,7 @@
     <string name="Activity6_TextView">Output</string>
     <string name="Activity6_name">Length Converter</string>
     <string name="Activity6_button">Convert</string>
+    <string name="Activity7">Weight Converter</string>
+    <string name="Activity8">Power Converter</string>
+
 </resources>
