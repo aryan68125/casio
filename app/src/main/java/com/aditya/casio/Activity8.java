@@ -20,7 +20,7 @@ public class Activity8 extends AppCompatActivity {
     Spinner spinner;
     Spinner spinner2;
     Button button20;
-    String Tag = "Activity7";
+    String Tag = "Activity8";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

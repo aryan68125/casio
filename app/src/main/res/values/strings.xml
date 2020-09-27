@@ -50,5 +50,7 @@
     <string name="Activity6_button">Convert</string>
     <string name="Activity7">Weight Converter</string>
     <string name="Activity8">Power Converter</string>
+    <string name="Activity9">Temperature Converter</string>
+    <string name="Activity10">Force Converter</string>
 
 </resources>

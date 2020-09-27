@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_x_portrait"
+    tools:context=".Activity10">
+
+    <Button
+        android:id="@+id/convert8"
+        android:layout_width="79dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/convert_z"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputspinner4" />
+
+    <EditText
+        android:id="@+id/Input8"
+        android:layout_width="247dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/Activity6_EditText"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/outputspinner4"
+        android:layout_width="247dp"
+        android:layout_height="72dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output18" />
+
+    <Spinner
+        android:id="@+id/inputspinner3"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="202dp"
+        android:layout_height="52dp"
+        android:text="@string/Activity10"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/output18"
+        android:layout_width="247dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/Activity6_TextView"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputspinner3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

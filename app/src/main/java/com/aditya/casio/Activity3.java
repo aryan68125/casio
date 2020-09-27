@@ -56,13 +56,13 @@ public class Activity3 extends AppCompatActivity {
                 }
                 if(position == 3)
                 {
-                    Intent intent = new Intent(Activity3.this, Activity6.class);
+                    Intent intent = new Intent(Activity3.this, Activity9.class);
                     startActivity(intent);
                 }
 
                 if(position == 4)
                 {
-                    Intent intent = new Intent(Activity3.this, Activity6.class);
+                    Intent intent = new Intent(Activity3.this, Activity10.class);
                     startActivity(intent);
                 }
 
