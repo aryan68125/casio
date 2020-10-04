@@ -30,7 +30,7 @@ public class Activity7 extends AppCompatActivity {
 
         //binding all the widgets to the activity code from the user interface xml file
         textView8 = findViewById(R.id.textView9);
-        editText19 = findViewById(R.id.Input);
+        editText19 = findViewById(R.id.editText223);
         spinner = findViewById(R.id.spinner5);
         spinner2 = findViewById(R.id.spinner6);
         button20 = findViewById(R.id.button9);

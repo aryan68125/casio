@@ -20,7 +20,7 @@ public class Activity11 extends AppCompatActivity {
     private double result;
 
     //defining the operations that this calculator will be able to perform
-    private static final char ADDITION = '+';
+    private static final char ADDITION = '+';  //private final static -> create this variable only once. private final -> create this variable for every object. First one saves memory
     private static final char SUBTRACTION = '-';
     private static final char MULTIPLICATION = '*';
     private static final char DIVISION = '/';
@@ -30,6 +30,11 @@ public class Activity11 extends AppCompatActivity {
 
     DecimalFormat decimalFormat; //instanciating decimal format class
 
+    //Denotes that the annotated element should only be called on the given API level or higher
+    //When a method is annotated with this, anytime you call that method,
+    //your receive a nice red warning that this call requires api version that is higher than your min api version,
+    //but it doesn't stop you from compiling and building your apk,
+    //it will just crash on lower versions of android as I tested it.
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
