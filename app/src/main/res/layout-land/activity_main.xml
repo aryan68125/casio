@@ -45,8 +45,8 @@
 
     <Button
         android:id="@+id/button18"
-        android:layout_width="77dp"
-        android:layout_height="68dp"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"

@@ -12,24 +12,39 @@ import android.widget.TextView;
 public class Activity4 extends AppCompatActivity {
     TextView textView11;
     ImageView imageView;
+    String message;
     public void clk1(View view){
         EditText textView10 = (EditText) findViewById(R.id.textView10);
-        String dollar = textView10.getText().toString();
-        Double doubledollar = Double.parseDouble(dollar);
-        Double doublerupees = 71.72 * doubledollar;
-        String toasttext = "$ to rs. = " + doublerupees.toString();
-        textView11.setText(toasttext);
-        imageView.setImageResource(R.drawable.inr);
+        if(textView10.getText().toString().isEmpty())
+        {
+            message = "the input field is empty!...";
+            textView11.setText(message);
+        }
+        else {
+            String dollar = textView10.getText().toString();
+            Double doubledollar = Double.parseDouble(dollar);
+            Double doublerupees = 71.72 * doubledollar;
+            String toasttext = "$ to rs. = " + doublerupees.toString();
+            textView11.setText(toasttext);
+            imageView.setImageResource(R.drawable.inr);
+        }
     }
 
     public void clk2(View view){
         EditText textView10 = (EditText) findViewById(R.id.textView10);
-        String dollar = textView10.getText().toString();
-        Double doubledollar = Double.parseDouble(dollar);
-        Double doublerupees = 0.01 * doubledollar;
-        String toasttext = "rs. to $ = " + doublerupees.toString();
-        textView11.setText(toasttext);
-        imageView.setImageResource(R.drawable.usd);
+        if(textView10.getText().toString().isEmpty())
+        {
+            message = "the input field is empty!...";
+            textView11.setText(message);
+        }
+        else {
+            String dollar = textView10.getText().toString();
+            Double doubledollar = Double.parseDouble(dollar);
+            Double doublerupees = 0.01 * doubledollar;
+            String toasttext = "rs. to $ = " + doublerupees.toString();
+            textView11.setText(toasttext);
+            imageView.setImageResource(R.drawable.usd);
+        }
     }
 
     String Tag = "Activity4";

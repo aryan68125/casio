@@ -164,7 +164,7 @@ View view;
                 }
                 else
                 {
-                    valueOne = Double.parseDouble(editText.getText().toString() + "");
+                    valueOne = Double.parseDouble(editText.getText().toString() + ""); //if you press button x^2 it will set valueOne
                     Information.setText(valueOne + " X^2");
                     editText.setText(null);
 
@@ -181,7 +181,7 @@ View view;
                 }
                 else
                 {
-                    valueTwo = Double.parseDouble(editText.getText().toString() + "");
+                    valueTwo = Double.parseDouble(editText.getText().toString() + ""); //if you press button x it will set valueTwo
                     Information.setText(valueTwo + " X");
                     editText.setText(null);
                 }
@@ -197,7 +197,7 @@ View view;
                 }
                 else
                 {
-                    valueThree = Double.parseDouble(editText.getText().toString() + "");
+                    valueThree = Double.parseDouble(editText.getText().toString() + ""); //if you press button Constant it will set valueThree
                     Information.setText(valueThree + " Constant");
                     editText.setText(null);
                 }
