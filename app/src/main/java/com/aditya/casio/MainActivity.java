@@ -25,11 +25,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button6 = findViewById(R.id.six);
         Button button7 = findViewById(R.id.seven);
         Button button18 = findViewById(R.id.button18);
+        Button button2 = findViewById(R.id.button2);
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
         button6.setOnClickListener(this);
         button7.setOnClickListener(this);
         button18.setOnClickListener(this);
+        button2.setOnClickListener(this);
+
 
     }
 
@@ -93,6 +96,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.textView:
                 Intent intent6 = new Intent(this,  FragActivity.class);
                 startActivity(intent6);
+                break;
+            case R.id.button2:
+                Intent intent7 = new Intent(this,  Activity2.class);
+                startActivity(intent7);
                 break;
         }
     }

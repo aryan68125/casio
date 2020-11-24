@@ -29,14 +29,20 @@ public class Activity3 extends AppCompatActivity {
         //creating an item holder array for listView
         String[] item = {"Length Converter", "Weight Converter" , "Power Converter", "Temperature converter" , "Force Converter"};
 
-        ListAdapter listItem = new ArrayAdapter<String>(this, R.layout.row, item); //this will set the contents inside the string array to the listView
+        final ListAdapter listItem = new ArrayAdapter<String>(this, R.layout.row, item); //this will set the contents inside the string array to the listView
         listView.setAdapter(listItem);
 
         //now setting up onItemClickListener on the listView
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
+            /*
+            AdapterView<?> passes the the items in an array to the onItemClick method and onItemClick passes that item to the OnItemClickListener
+            view helps the onItemClick to know what item in an array of list is actually tapped on
+            position returns the position of an item in an array of list to the onItemClick
+            long l is connected with the id of the item its function as almost the same as int position
+             */
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-
+                Log.i("item",(String) listItem.getItem(position));
                 if(position == 0)
                 { //Length Converter
                     Intent intent = new Intent(Activity3.this, Activity6.class);
