@@ -226,35 +226,37 @@ View view;
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Double doublea = valueOne;
-                Double doubleb = valueTwo;
-                Double doublec = valueThree;
-                Double doubleDiscriminant = (doubleb * doubleb) - (4 * doublea * doublec);
-                if(doubleDiscriminant>0)
-                {
-                    Double doubleroot1 = (-doubleb + Math.sqrt(doubleDiscriminant))/ (2 * doublea);
-                    Double doubleroot2 = (-doubleb - Math.sqrt(doubleDiscriminant)) / (2 * doublea);
-                    String toasttext = "Root1 = " + doubleroot1.toString();
-                    textView.setText(toasttext);
-                    String toasttext2 = "Root2 = " + doubleroot2.toString();
-                    textView2.setText(toasttext2);
+                try {
+                    Double doublea = valueOne;
+                    Double doubleb = valueTwo;
+                    Double doublec = valueThree;
+                    Double doubleDiscriminant = (doubleb * doubleb) - (4 * doublea * doublec);
+                    if (doubleDiscriminant > 0) {
+                        Double doubleroot1 = (-doubleb + Math.sqrt(doubleDiscriminant)) / (2 * doublea);
+                        Double doubleroot2 = (-doubleb - Math.sqrt(doubleDiscriminant)) / (2 * doublea);
+                        String toasttext = "Root1 = " + doubleroot1.toString();
+                        textView.setText(toasttext);
+                        String toasttext2 = "Root2 = " + doubleroot2.toString();
+                        textView2.setText(toasttext2);
+                    } else if (doubleDiscriminant == 0) {
+                        Double doubleroot1 = (-doubleb) / (2 * doublea);
+                        String toasttext = "Root1 " + doubleroot1.toString();
+                        textView.setText(toasttext);
+                        String toasttext2 = "Root2 " + doubleroot1.toString();
+                        textView2.setText(toasttext2);
+                    } else {
+                        Double real = -doubleb / (2 * doublea);
+                        Double imagPart = Math.sqrt(-doubleDiscriminant) / (2 * doublea);
+                        String doubleroot1 = real + " + " + " i " + imagPart;
+                        String doubleroot2 = real + " - " + " i " + imagPart;
+                        textView.setText(doubleroot1);
+                        textView2.setText(doubleroot2);
+                    }
                 }
-                else if(doubleDiscriminant == 0)
+                catch (Exception e)
                 {
-                    Double doubleroot1 = (-doubleb)/(2 * doublea);
-                    String toasttext = "Root1 " + doubleroot1.toString();
-                    textView.setText(toasttext);
-                    String toasttext2 = "Root2 " + doubleroot1.toString();
-                    textView2.setText(toasttext2);
-                }
-                else
-                {
-                    Double real = -doubleb / (2 * doublea);
-                    Double imagPart = Math.sqrt(-doubleDiscriminant) / (2 * doublea);
-                    String doubleroot1 = real + " + " + " i " + imagPart;
-                    String doubleroot2 = real + " - " + " i " + imagPart;
-                    textView.setText(doubleroot1);
-                    textView2.setText(doubleroot2);
+                    String messege="Input Field is NULL";
+                    Information.setText(messege);
                 }
             }
         });

@@ -52,9 +52,10 @@ public class Activity6 extends AppCompatActivity {
         button20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Double result;
-                String toasttext;
-                Double amount = Double.parseDouble(editText18.getText().toString());
+                try {
+                    Double result;
+                    String toasttext;
+                    Double amount = Double.parseDouble(editText18.getText().toString());
                     //applying conditions from = mile
                     if (spinner.getSelectedItem() == "Mile" && spinner2.getSelectedItem() == "Kilometer") {
                         result = 1.60934 * amount;
@@ -382,6 +383,23 @@ public class Activity6 extends AppCompatActivity {
                         toasttext = "He bhagvaan utha le re isko";
                         textView20.setText(toasttext);
                     }
+                }
+                catch (Exception e)
+                {
+                    String messege="Input Field is Empty";
+                    textView20.setText(messege);
+                }
+                /*
+                   we will use try and catch to handel any unexpected errors in our application so that if something gos wrong our application does not crash
+                   instead it can still function as normal with an error message like hey this is what went wrong to notify the user
+                   try{
+                     //the code here which you know might cause problem under a certain scenario
+                     }
+                     catch (Exception e)
+                     {
+                     //error message that you want to display to the user
+                     }
+                 */
             }
         });
     }

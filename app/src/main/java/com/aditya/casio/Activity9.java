@@ -46,63 +46,72 @@ public class Activity9 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Double result;
-                String toasttext;
-                Double amount = Double.parseDouble(editText.getText().toString());
-                //for celsius
-                if(spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Celsius")
-                {
-                    toasttext = "Abe bin bijili ke khambe dekh ke fir convert kar na";
-                    textView.setText(toasttext);
+                try {
+                    Double result;
+                    String toasttext;
+                    Double amount = Double.parseDouble(editText.getText().toString());
+                    //for celsius
+                    if (spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Celsius") {
+                        toasttext = "Abe bin bijili ke khambe dekh ke fir convert kar na";
+                        textView.setText(toasttext);
+                    }
+                    if (spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Fahrenheit") {
+                        result = 33.8 * amount;
+                        toasttext = "Celsius to Fahrenheit = " + result.toString();
+                        textView.setText(toasttext);
+                    }
+                    if (spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Kelvin") {
+                        result = 274.15 * amount;
+                        toasttext = "Celsius to Kelvin = " + result.toString();
+                        textView.setText(toasttext);
+                    }
+                    //for Fahrenheit
+                    if (spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Celsius") {
+                        result = -17.2222 * amount;
+                        toasttext = "Fahrenheit to Celsius = " + result.toString();
+                        textView.setText(toasttext);
+                    }
+                    if (spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Fahrenheit") {
+                        toasttext = "Kyu tum mera sir khane aa jate ho mujhey samajh ni aata";
+                        textView.setText(toasttext);
+                    }
+                    if (spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Kelvin") {
+                        result = 255.928 * amount;
+                        toasttext = "Fahrenheit to Kelvin = " + result.toString();
+                        textView.setText(toasttext);
+                    }
+                    //for Kelvin
+                    if (spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Celsius") {
+                        result = -272.15 * amount;
+                        toasttext = "Kelvin to Celsius = " + result.toString();
+                        textView.setText(toasttext);
+                    }
+                    if (spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Fahrenheit") {
+                        result = -457.87 * amount;
+                        toasttext = "Kelvin to Fahrenheit = " + result.toString();
+                        textView.setText(toasttext);
+                    }
+                    if (spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Kelvin") {
+                        toasttext = "Beta andar se khol ke baja dunga dekh ke fir convert kar na";
+                        textView.setText(toasttext);
+                    }
                 }
-                if(spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Fahrenheit")
+                catch (Exception e)
                 {
-                    result = 33.8 *amount;
-                    toasttext = "Celsius to Fahrenheit = "+ result.toString();
-                    textView.setText(toasttext);
+                    String messege="Input Field is Empty";
+                    textView.setText(messege);
                 }
-                if(spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Kelvin")
-                {
-                    result = 274.15 *amount;
-                    toasttext = "Celsius to Kelvin = "+ result.toString();
-                    textView.setText(toasttext);
-                }
-                //for Fahrenheit
-                if(spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Celsius")
-                {
-                    result = -17.2222 *amount;
-                    toasttext = "Fahrenheit to Celsius = "+ result.toString();
-                    textView.setText(toasttext);
-                }
-                if(spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Fahrenheit")
-                {
-                    toasttext = "Kyu tum mera sir khane aa jate ho mujhey samajh ni aata";
-                    textView.setText(toasttext);
-                }
-                if(spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Kelvin")
-                {
-                    result = 255.928 *amount;
-                    toasttext = "Fahrenheit to Kelvin = "+ result.toString();
-                    textView.setText(toasttext);
-                }
-                //for Kelvin
-                if(spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Celsius")
-                {
-                    result = -272.15 *amount;
-                    toasttext = "Kelvin to Celsius = "+ result.toString();
-                    textView.setText(toasttext);
-                }
-                if(spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Fahrenheit")
-                {
-                    result = -457.87 *amount;
-                    toasttext = "Kelvin to Fahrenheit = "+ result.toString();
-                    textView.setText(toasttext);
-                }
-                if(spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Kelvin")
-                {
-                    toasttext = "Beta andar se khol ke baja dunga dekh ke fir convert kar na";
-                    textView.setText(toasttext);
-                }
+                /*
+                   we will use try and catch to handel any unexpected errors in our application so that if something gos wrong our application does not crash
+                   instead it can still function as normal with an error message like hey this is what went wrong to notify the user
+                   try{
+                     //the code here which you know might cause problem under a certain scenario
+                     }
+                     catch (Exception e)
+                     {
+                     //error message that you want to display to the user
+                     }
+                 */
 
             }
         });
