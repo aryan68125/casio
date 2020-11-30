@@ -56,18 +56,19 @@ public class Activity9 extends AppCompatActivity {
                         textView.setText(toasttext);
                     }
                     if (spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Fahrenheit") {
-                        result = 33.8 * amount;
+                        result = (amount * 9 / 5) + 32;
                         toasttext = "Celsius to Fahrenheit = " + result.toString();
                         textView.setText(toasttext);
                     }
                     if (spinnerinput.getSelectedItem() == "Celsius" && spinneroutput.getSelectedItem() == "Kelvin") {
-                        result = 274.15 * amount;
+                        result = ( amount + 273.15 );
+
                         toasttext = "Celsius to Kelvin = " + result.toString();
                         textView.setText(toasttext);
                     }
                     //for Fahrenheit
                     if (spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Celsius") {
-                        result = -17.2222 * amount;
+                        result = ((amount-32)*5)/9;
                         toasttext = "Fahrenheit to Celsius = " + result.toString();
                         textView.setText(toasttext);
                     }
@@ -76,18 +77,18 @@ public class Activity9 extends AppCompatActivity {
                         textView.setText(toasttext);
                     }
                     if (spinnerinput.getSelectedItem() == "Fahrenheit" && spinneroutput.getSelectedItem() == "Kelvin") {
-                        result = 255.928 * amount;
+                        result = 273.5 + ((amount - 32.0) * (5.0/9.0));
                         toasttext = "Fahrenheit to Kelvin = " + result.toString();
                         textView.setText(toasttext);
                     }
                     //for Kelvin
                     if (spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Celsius") {
-                        result = -272.15 * amount;
+                        result = amount - 273;
                         toasttext = "Kelvin to Celsius = " + result.toString();
                         textView.setText(toasttext);
                     }
                     if (spinnerinput.getSelectedItem() == "Kelvin" && spinneroutput.getSelectedItem() == "Fahrenheit") {
-                        result = -457.87 * amount;
+                        result = (9.0 / 5) * (amount - 273.15) + 32;;
                         toasttext = "Kelvin to Fahrenheit = " + result.toString();
                         textView.setText(toasttext);
                     }

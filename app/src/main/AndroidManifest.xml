@@ -9,23 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity2"></activity>
+        <activity android:name=".Activity2"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity
             android:name=".Activity12"
-            android:screenOrientation="portrait" />
-        <activity android:name=".Activity11" />
-        <activity android:name=".Activity10" />
-        <activity android:name=".Activity9" />
-        <activity android:name=".Activity8" />
-        <activity android:name=".Acivity8" />
-        <activity android:name=".Activity7" />
-        <activity android:name=".Activity6" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Activity11"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Activity10"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Activity9"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Activity8"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Activity7"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Activity6"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".FragActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activity4" />
-        <activity android:name=".Activity3" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity4"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Activity3"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
