@@ -35,7 +35,7 @@
         android:id="@+id/spinner8"
         android:layout_width="236dp"
         android:layout_height="51dp"
-        android:background="#FFFFFF"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/output" />
@@ -44,7 +44,7 @@
         android:id="@+id/spinner7"
         android:layout_width="244dp"
         android:layout_height="59dp"
-        android:background="#FFFFFF"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Input1" />

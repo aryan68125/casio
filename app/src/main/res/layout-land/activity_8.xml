@@ -38,7 +38,7 @@
         android:layout_height="65dp"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:background="#FFFFFF"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toEndOf="@+id/Input1"
         app:layout_constraintTop_toBottomOf="@+id/output" />
 
@@ -48,7 +48,7 @@
         android:layout_height="68dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:background="#FFFFFF"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Input1" />
 

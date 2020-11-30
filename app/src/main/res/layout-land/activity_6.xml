@@ -56,7 +56,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="44dp"
         android:layout_marginRight="44dp"
-        android:background="#EEEEED"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,7 +67,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="44dp"
         android:layout_marginRight="44dp"
-        android:background="#EDECEC"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button20" />
 

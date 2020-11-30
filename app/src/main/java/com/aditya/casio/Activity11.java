@@ -213,15 +213,14 @@ public class Activity11 extends AppCompatActivity {
         {
             valueTwo = Double.parseDouble(binding.editText.getText().toString()); //we read valueTwo from the editText
             binding.editText.setText(null); //setting up the edit Text as null after the operation is complete
-
-            if(CURRENT_ACTION == ADDITION) //and perform the current queued operation
-                result = this.valueOne + valueTwo;
-            else if(CURRENT_ACTION == SUBTRACTION)
-                result = this.valueOne - valueTwo;
-            else if(CURRENT_ACTION == MULTIPLICATION)
-                result = this.valueOne * valueTwo;
-            else if(CURRENT_ACTION == DIVISION)
-                result = this.valueOne / valueTwo;
+               if (CURRENT_ACTION == ADDITION) //and perform the current queued operation
+                   result = this.valueOne + valueTwo;
+               else if (CURRENT_ACTION == SUBTRACTION)
+                   result = this.valueOne - valueTwo;
+               else if (CURRENT_ACTION == MULTIPLICATION)
+                   result = this.valueOne * valueTwo;
+               else if (CURRENT_ACTION == DIVISION)
+                   result = this.valueOne / valueTwo;
         }
         else //On the other hand, if valueOne is NaN, valueOne assigned the number in the editText
         {

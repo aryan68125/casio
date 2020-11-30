@@ -37,11 +37,11 @@ public class Activity10 extends AppCompatActivity {
 
         //setting up spinner item array that will be displayed inside the spinner
         String[] from = {"Newton", "Kilo newton", "Gram-force", "Kilogram-force", "Ton-force", "Giga newton", "Mega newton"};
-        ArrayAdapter ad = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, from);
+        ArrayAdapter ad = new ArrayAdapter<String>(this, R.layout.row, from);
         spinner.setAdapter(ad); //input spinner
 
         String[] to = {"Newton", "Kilo newton", "Gram-force", "Kilogram-force", "Ton-force", "Giga newton", "Mega newton"};
-        ArrayAdapter ad1 = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, to);
+        ArrayAdapter ad1 = new ArrayAdapter<String>(this, R.layout.row, to);
         spinner2.setAdapter(ad1); //output spinner
 
         //setting up onclickListener on button
